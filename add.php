@@ -35,7 +35,8 @@ require 'elements/header.php';
             <label for="name">Poste occupé</label>
             <input type="text" class="form-control" id="post" name="post" required>
         </div>
-        <button type="submit" class=" form-control btn btn-primary">Ajouter</button>
+        <button type="submit" class="mb-3 form-control btn btn-primary">Ajouter</button>
+        <a href="/" type="button" class="form-control btn btn-danger ">Annuler</a>
     </form>
 </div>
 
