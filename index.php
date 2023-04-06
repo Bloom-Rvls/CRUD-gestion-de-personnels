@@ -20,7 +20,7 @@ require 'elements/header.php';
         <h2 class="">Liste du personnel</h2>
         <table class="table">
             <thead class="thead-light">
-                <th scope="col">Numero</th>
+                <th scope="col">Identifiant</th>
                 <th scope="col">Nom</th>
                 <th scope="col">Prenom</th>
                 <th scope="col">Poste</th>
@@ -34,7 +34,7 @@ require 'elements/header.php';
                         <td><?= $info->nom ?></td>
                         <td><?= $info->prenom ?></td>
                         <td><?= $info->poste ?></td>
-                        <td><a href="modify.php?id=<?=$info->numero ?>" class=" text-success"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="modify.php?numero=<?=$info->numero ?>" class=" text-success"><i class="fas fa-edit"></i></a></td>
                         <td><a href="delete.php?numero=<?=$info->numero ?>" class=" text-danger"><i class="fas fa-trash"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
