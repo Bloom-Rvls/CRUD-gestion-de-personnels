@@ -34,8 +34,8 @@ require 'elements/header.php';
                         <td><?= $info->nom ?></td>
                         <td><?= $info->prenom ?></td>
                         <td><?= $info->poste ?></td>
-                        <td><a href="modify.php" class=" text-success"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="delete.php" class=" text-danger"><i class="fas fa-trash"></i></a></td>
+                        <td><a href="modify.php?id=<?=$info->numero ?>" class=" text-success"><i class="fas fa-edit"></i></a></td>
+                        <td><a href="delete.php?numero=<?=$info->numero ?>" class=" text-danger"><i class="fas fa-trash"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
