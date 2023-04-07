@@ -22,7 +22,9 @@ require 'elements/header.php';
 
 <div class="container">
     <h2>Ajouter un(e) nouvel(le) employé(e)</h2>
+
     <form action="" method="post" class="border p-5">
+    <a href="/" class="fas fa-row my-3">Annuler</a>
         <div class="form-group">
             <label for="name">Nom</label>
             <input type="text" class="form-control" id="name" name="name" required>
@@ -36,7 +38,6 @@ require 'elements/header.php';
             <input type="text" class="form-control" id="post" name="post" required>
         </div>
         <button type="submit" class="mb-3 form-control btn btn-primary">Ajouter</button>
-        <a href="/" type="button" class="form-control btn btn-danger ">Annuler</a>
     </form>
 </div>
 
