@@ -12,7 +12,7 @@ try {
             'poste' => $_POST['post'],
             'numero' => $_GET['numero']
         ]);
-        $success = 'Rensignements correctement mofifier';
+        $success = 'Renseignements correctement modifiés';
     }
     $query = $pdo->prepare('SELECT * FROM info WHERE numero= :numero');
     $query->execute([
@@ -28,7 +28,7 @@ require 'elements/header.php';
 <div class="container">
     <h2>Modifier les rensignements</h2>
     <p>
-        <a href="/">Revenir à la liste </a>
+        <a href="/"> << Revenir à la liste </a>
     </p>
     <?php if($success) : ?>
         <div class="alert alert-success"><?= $success ?></div>

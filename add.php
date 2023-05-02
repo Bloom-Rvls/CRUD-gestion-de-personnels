@@ -24,7 +24,7 @@ require 'elements/header.php';
     <h2>Ajouter un(e) nouvel(le) employé(e)</h2>
 
     <form action="" method="post" class="border p-5">
-    <a href="/" class="fas fa-row my-3">Annuler</a>
+    <a href="/" class="my-3"> << Annuler</a>
         <div class="form-group">
             <label for="name">Nom</label>
             <input type="text" class="form-control" id="name" name="name" required>
